@@ -211,6 +211,8 @@ export default function Calculator() {
                         h-16 rounded-xl text-xl font-medium transition-all active:scale-95
                         ${label === "="
                           ? "bg-cyan-500 text-black hover:bg-cyan-400 border-0"
+                          : isZero
+                          ? "bg-slate-600/50 text-white border border-slate-500/50 hover:bg-slate-500/60 ring-1 ring-slate-400/30"
                           : isOperator(label)
                           ? "bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/30"
                           : isAction(label)
