@@ -143,6 +143,14 @@ export default function Calculator() {
       <div className="w-full max-w-sm">
         <div className="mb-3 flex items-center justify-between px-1">
           <span className="text-cyan-400 text-xs font-mono tracking-widest uppercase">Физмат Калькулятор</span>
+          <div className="flex items-center gap-2">
+          <button
+            onClick={() => navigate("/graph")}
+            className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-all font-mono bg-violet-500/20 border-violet-500/30 text-violet-400 hover:bg-violet-500/30"
+          >
+            <Icon name="LineChart" size={12} />
+            Графики
+          </button>
           <button
             onClick={() => setSciMode(!sciMode)}
             className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-all font-mono ${
@@ -154,6 +162,7 @@ export default function Calculator() {
             <Icon name={sciMode ? "ChevronUp" : "FlaskConical"} size={12} />
             {sciMode ? "Скрыть" : "Расширенный"}
           </button>
+          </div>
         </div>
 
         <div className="bg-[#040f1e] border border-[#0e2a3a] rounded-2xl overflow-hidden shadow-2xl shadow-cyan-900/20">
