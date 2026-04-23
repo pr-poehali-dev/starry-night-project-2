@@ -48,14 +48,14 @@ export default function LandingPage() {
           <button
             key={section.id}
             className={`w-3 h-3 rounded-full my-2 transition-all ${
-              index === activeSection ? 'bg-white scale-150' : 'bg-gray-600'
+              index === activeSection ? 'bg-cyan-400 scale-150' : 'bg-slate-600'
             }`}
             onClick={() => handleNavClick(index)}
           />
         ))}
       </nav>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-0.5 bg-white origin-left z-30"
+        className="fixed top-0 left-0 right-0 h-0.5 bg-cyan-400 origin-left z-30"
         style={{ scaleX }}
       />
       <div
