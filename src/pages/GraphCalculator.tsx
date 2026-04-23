@@ -215,15 +215,24 @@ export default function GraphCalculator() {
 
   return (
     <div className="min-h-screen bg-[#020d1a] text-white flex flex-col">
-      <div className="flex items-center gap-4 px-6 py-4 border-b border-[#0e2a3a]">
+      <div className="flex items-center justify-between px-6 py-4 border-b border-[#0e2a3a]">
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => navigate("/")}
+            className="flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors text-sm"
+          >
+            <Icon name="ArrowLeft" size={16} />
+            Назад
+          </button>
+          <span className="text-cyan-400 text-xs font-mono tracking-widest uppercase">Построение графиков</span>
+        </div>
         <button
-          onClick={() => navigate("/")}
-          className="flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors text-sm"
+          onClick={() => navigate("/calculator")}
+          className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-all font-mono bg-cyan-500/20 border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/30"
         >
-          <Icon name="ArrowLeft" size={16} />
-          Назад
+          <Icon name="Calculator" size={12} />
+          Калькулятор
         </button>
-        <span className="text-cyan-400 text-xs font-mono tracking-widest uppercase">Построение графиков</span>
       </div>
 
       <div className="flex flex-col lg:flex-row flex-1 gap-0 overflow-hidden">
