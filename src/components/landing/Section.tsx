@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { useNavigate } from "react-router-dom"
 import type { SectionProps } from "@/types"
 
-export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText }: SectionProps) {
+export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, showSecondButton, secondButtonText }: SectionProps) {
   const navigate = useNavigate()
   return (
     <section id={id} className="relative h-screen w-full snap-start flex flex-col justify-center p-8 md:p-16 lg:p-24">
@@ -40,7 +40,7 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
           initial={{ opacity: 0, y: 20 }}
           animate={isActive ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-12 md:mt-16"
+          className="mt-12 md:mt-16 flex flex-wrap gap-4"
         >
           <Button
             variant="outline"
@@ -50,6 +50,16 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
           >
             {buttonText}
           </Button>
+          {showSecondButton && (
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-violet-400 bg-transparent border-violet-400 hover:bg-violet-400 hover:text-black transition-colors"
+              onClick={() => navigate('/graph')}
+            >
+              {secondButtonText}
+            </Button>
+          )}
         </motion.div>
       )}
     </section>
