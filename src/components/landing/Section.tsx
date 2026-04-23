@@ -60,6 +60,16 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
               {secondButtonText}
             </Button>
           )}
+          {showThirdButton && (
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-amber-400 bg-transparent border-amber-400 hover:bg-amber-400 hover:text-black transition-colors"
+              onClick={() => navigate('/formulas')}
+            >
+              {thirdButtonText}
+            </Button>
+          )}
         </motion.div>
       )}
     </section>
