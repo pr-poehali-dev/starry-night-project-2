@@ -8,7 +8,9 @@ export const sections = [
     showButton: true,
     buttonText: 'Начать работу',
     showSecondButton: true,
-    secondButtonText: 'Построение графиков'
+    secondButtonText: 'Построение графиков',
+    showThirdButton: true,
+    thirdButtonText: 'Формулы'
   },
   {
     id: 'about',

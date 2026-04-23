@@ -166,7 +166,7 @@ export default function Formulas() {
                   className={`group flex items-center gap-4 p-5 rounded-2xl border ${s.bg} ${s.border} hover:scale-[1.02] transition-all text-left`}
                 >
                   <div className={`w-12 h-12 rounded-xl ${s.bg} border ${s.border} flex items-center justify-center flex-shrink-0`}>
-                    <Icon name={s.icon as any} size={22} className={s.color} />
+                    <Icon name={s.icon} size={22} className={s.color} />
                   </div>
                   <div>
                     <div className={`font-semibold text-lg ${s.color}`}>{s.label}</div>
@@ -185,7 +185,7 @@ export default function Formulas() {
         <div className="flex-1 overflow-y-auto p-6 max-w-4xl mx-auto w-full">
           <div className="flex items-center gap-3 mb-6">
             <div className={`w-10 h-10 rounded-xl ${subject.bg} border ${subject.border} flex items-center justify-center`}>
-              <Icon name={subject.icon as any} size={18} className={subject.color} />
+              <Icon name={subject.icon} size={18} className={subject.color} />
             </div>
             <h2 className={`text-2xl font-bold ${subject.color}`}>{subject.label}</h2>
           </div>

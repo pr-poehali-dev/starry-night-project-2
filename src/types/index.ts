@@ -9,6 +9,8 @@ export interface Section {
   buttonText?: string
   showSecondButton?: boolean
   secondButtonText?: string
+  showThirdButton?: boolean
+  thirdButtonText?: string
 }
 
 export interface SectionProps extends Section {
