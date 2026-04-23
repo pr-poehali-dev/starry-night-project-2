@@ -6,7 +6,7 @@ export const sections = [
     subtitle: <Badge variant="outline" className="text-cyan-400 border-cyan-400">Для студентов физмата</Badge>,
     title: "Калькулятор,\nкоторый думает\nкак физик.",
     showButton: true,
-    buttonText: 'Попробовать бесплатно'
+    buttonText: 'Начать работу'
   },
   {
     id: 'about',
