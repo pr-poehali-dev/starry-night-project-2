@@ -1,0 +1,19 @@
+{
+  "name": "Физмат Калькулятор",
+  "short_name": "Физмат",
+  "description": "Калькулятор, графики и формулы для физики и математики",
+  "theme_color": "#020d1a",
+  "background_color": "#020d1a",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "https://cdn.poehali.dev/projects/c6817b48-d807-442c-a024-b8fafd599499/files/907bd084-d7fb-468f-b225-9df6f86b53e5.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
